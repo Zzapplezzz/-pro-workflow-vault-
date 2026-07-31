@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Speed Expert | Manual Optimization Guide</title>
+    <style>
+        :root { --primary: #00d4ff; --bg: #050505; --text: #f0f0f0; --accent: #111; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; line-height: 1.8; }
+        header { padding: 3rem 1rem; text-align: center; border-bottom: 1px solid #222; background: linear-gradient(to bottom, #111, #050505); }
+        header h1 { font-size: 1rem; color: var(--primary); text-transform: uppercase; letter-spacing: 4px; margin: 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .hook { font-style: italic; color: #777; border-left: 2px solid var(--primary); padding-left: 1.5rem; margin-bottom: 3rem; font-size: 1.1rem; }
+        .main-title { font-size: 3rem; margin-bottom: 4rem; text-align: center; font-weight: 800; }
+        .split-screen { display: flex; gap: 4rem; margin-bottom: 6rem; align-items: flex-start; }
+        .image-side { flex: 1; position: sticky; top: 2rem; }
+        .image-side img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); display: block; }
+        .content-side { flex: 2; }
+        h2 { color: var(--primary); font-size: 1.8rem; margin-top: 3rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #ccc; }
+        .tech-badge { background: #1a1a1a; color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 4px; font-family: monospace; font-size: 0.9rem; border: 1px solid #333; }
+        .cta-box { background: linear-gradient(135deg, #0a0a0a 0%, #111 100%); padding: 4rem; border-radius: 4px; text-align: center; border: 1px solid var(--primary); margin-top: 6rem; }
+        .cta-btn { background: var(--primary); color: #000; padding: 1.2rem 3rem; text-decoration: none; font-weight: 900; border-radius: 2px; font-size: 1.2rem; transition: 0.4s; display: inline-block; }
+        .cta-btn:hover { background: #fff; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,212,255,0.3); }
+        footer { padding: 4rem 2rem; background: #000; border-top: 1px solid #111; text-align: center; font-size: 0.85rem; color: #555; }
+        footer a { color: #888; text-decoration: none; margin: 0 1rem; }
+        @media (max-width: 1024px) { .split-screen { flex-direction: column; } .image-side { position: static; width: 100%; } .image-side img { max-height: 300px; object-fit: cover; } }
+    </style>
+</head>
+<body>
+    <header><h1>Turning Tech Friction into Creative Flow</h1></header>
+    <div class="container">
+        <div class="hook">"@dominik_bst7207 asked: Can using AI-generated code negatively affect store performance, page speed, or Core Web Vitals?"</div>
+        <h1 class="main-title">The Silent Killer of Conversions: Why AI-Generated Shopify Code Requires a Human Audit</h1>
+        <div class="split-screen">
+            <div class="image-side">
+                <img src="https://i.postimg.cc/mzJzL6w9/Image-1.jpg" alt="The AI Speed Trap">
+                <p style="text-align:center; font-size: 0.8rem; margin-top: 1rem; color: #555;">[FIG 01] THE AI SPEED TRAP: RED SCORES & LOST SALES</p>
+                <img src="https://i.postimg.cc/YGhLww11/Image-2.jpg" alt="Manual Optimization Success" style="margin-top: 2rem;">
+                <p style="text-align:center; font-size: 0.8rem; margin-top: 1rem; color: #555;">[FIG 02] THE MANUAL MASTERY: 100/100 PERFECTION</p>
+            </div>
+            <div class="content-side">
+                <h2>The 1-Second Conversion Trap</h2>
+                <p>In the competitive world of e-commerce, speed isn't just a technical metric—it's a financial one. Research shows that a 1-second delay in page load time can cut conversions by up to 7% [1, 2]. When you use AI tools like Claude to build your store, you are often introducing "generic" code that isn't optimized for the unique architecture of Shopify's Liquid engine. This creates a hidden friction that drives away 63% of shoppers if a site takes more than 4 seconds to load [1].</p>
+                
+                <h2>Understanding "Liquid Code Bloat"</h2>
+                <p>AI-generated code often lacks the precision of a seasoned developer. It can create <span class="tech-badge">Liquid Code Bloat</span>, where redundant logic and heavy scripts force the server to work harder than necessary. This directly increases your <span class="tech-badge">Time to First Byte (TTFB)</span>, delaying the very moment your customer sees your brand. While AI is great for speed of creation, it is often the enemy of speed of execution [3].</p>
+
+                <h2>The Threat to Core Web Vitals</h2>
+                <p>Google’s ranking algorithm now relies heavily on Core Web Vitals. Unoptimized AI code frequently causes <span class="tech-badge">Render-blocking resources</span>, meaning the browser stops everything to download a script before showing your hero banner. This destroys your <span class="tech-badge">Largest Contentful Paint (LCP)</span>. Furthermore, improper container handling in generated code often leads to <span class="tech-badge">Cumulative Layout Shift (CLS)</span>, making your site feel unstable and unprofessional to both users and search engines [3, 4].</p>
+
+                <h2>Why "One-Click Apps" Fail</h2>
+                <p>Many merchants try to fix these issues with "speed apps." However, as experts note, most quick fixes only scratch the surface and can actually add more heavy scripts to your store [5]. Real, lasting performance gains come from 100% manual, code-level work. This involves cleaning up unused app code, minifying JS/CSS files by hand, and ensuring scripts only run on the pages where they are strictly necessary [6, 7].</p>
+
+                <h2>The Path to a 90+ PageSpeed Score</h2>
+                <p>To achieve a truly high-performance store, you must transition from "AI-assisted" to "Expert-audited." This includes implementing <span class="tech-badge">Critical Rendering Path</span> optimizations, preloading essential assets like fonts and banners, and using advanced lazy loading for images and videos [6]. This technical rigor ensures that your store is not just fast on a report, but feels "instant" to your actual customers [8].</p>
+            </div>
+        </div>
+        <div class="cta-box">
+            <h3>Ready to Transform Your Store into a High-Conversion Machine?</h3>
+            <p>Don't let unoptimized code kill your sales. Partner with a Fiverr Pro expert who brings 10+ years of European experience in manual, code-level Shopify optimization. Get a full technical audit and guaranteed Core Web Vitals improvements without any downtime.</p>
+            <br>
+            <a href="https://go.fiverr.com/visit/?bta=1122067&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fgvrdenu%252Fdo-advanced-speed-optimization-for-shopify-store-website%253Fcontext_referrer%253Dsearch_gigs_with_sellers_who_speak%2526source%253Dtop-bar%2526ref_ctx_id%253D7d3daa0c54014b118328d8d6f05cd693%2526pckg_id%253D1%2526pos%253D2%2526context_type%253Dauto%2526funnel%253D7d3daa0c54014b118328d8d6f05cd693%2526imp_id%253Ddb2caf30-80f4-4b6a-b65f-ee71d6dc56f8%2526ad_key%253D67d436df-e638-429c-84d3-5d410fda0ef9" class="cta-btn">Get Your Free Manual Speed Assessment (Gvrdenu - Fiverr Pro)</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Pro Workflow Vault. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Affiliate Disclosure</a> | <a href="#">Legal Notice</a>
+    </footer>
+</body>
+</html>
